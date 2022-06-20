@@ -24,22 +24,33 @@
     justify-content: space-between;
 }
 
+
+/* Carousel */
 h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 50px;
 }
 
-.carousel-container {
+#carousel-container {
+    max-width: 1000px;
     width: 50%;
     margin: 100px auto;
 }
 
-.placeholder-img {
-    width: 100%;
+#img-container {
+    margin-bottom: 20px;
+    width: 1000px;
     height: 700px;
-    background-color: beige;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
     margin-bottom: 50px;
+    border-radius: 5px;
+    display: none;
+    object-fit: cover;
 }
 
 .buttons-container {
@@ -47,9 +58,17 @@ h1 {
 }
 
 button {
-    padding: 20px;
+    color: white;
+    background: darkblue;
+    padding: 20px 30px;
     border: none;
     font-size: 2rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Scripts */
+
+.active {
+    display: block;
 }
